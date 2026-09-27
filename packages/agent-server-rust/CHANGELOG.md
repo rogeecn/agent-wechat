@@ -1,5 +1,29 @@
 # @agent-wechat/agent-server
 
+## 0.15.1
+
+### Patch Changes
+
+- [#195](https://github.com/thisnick/agent-wechat/pull/195) [`a71cf8b`](https://github.com/thisnick/agent-wechat/commit/a71cf8b66f99978b6c53bb43a7398f42692a9284) Thanks [@thisnick](https://github.com/thisnick)! - Accept valid phone images with recoverable metadata warnings and use best-available image retrieval by default in the HTTP API, CLI, and OpenClaw. The reported quality distinguishes original, standard, and thumbnail copies; callers can request strict full resolution with `quality=full` or `wx messages media --full`.
+
+## 0.15.0
+
+## 0.14.0
+
+## 0.13.0
+
+## 0.12.2
+
+### Patch Changes
+
+- [#185](https://github.com/thisnick/agent-wechat/pull/185) [`d583f94`](https://github.com/thisnick/agent-wechat/commit/d583f9490e65264faf08244cf916cb98ed6818fd) Thanks [@thisnick](https://github.com/thisnick)! - Fix frozen container rendering by running Xvfb and x11vnc as the WeChat user, while preserving read-only VNC. Store proxy configuration in a private runtime directory so proxied containers can restart reliably.
+
+  Verify that chat selection opens the requested chat before reporting success, resolve reordered chats at click time, and keep repeated ARM chat selection from closing the active chat.
+
+  Support both Send and Send(S) buttons and the nested message composer layout in newer WeChat builds.
+
+## 0.12.1
+
 ## 0.12.0
 
 ## 0.11.15
